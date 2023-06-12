@@ -1,5 +1,4 @@
 import time
-
 from utils.login import login
 from pages.actuals_page import ActualsPage
 from pages.login_page import LoginPage

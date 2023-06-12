@@ -1,7 +1,6 @@
-import time
 from utils.login import login
-from utils.projects_page.clients import create_new_client, delete_client
-from utils.projects_page.projects import create_project, archive_project, delete_project, get_projects_page
+from utils.projects_page.clients import *
+from utils.projects_page.projects import *
 
 
 def test_create_project(browser):
@@ -14,8 +13,8 @@ def test_create_project(browser):
 
 
 def test_archive_and_delete_project(browser):
-    """ Archive and delete the project. Joint test because of impossibility to delete the project without archiving it
- """
+    """Archive and delete the project.
+    Joint test because of impossibility to delete the project without archiving it"""
     project_name = 'Test project 2'
     project_short_name = 'Test 2'
     login(browser)
